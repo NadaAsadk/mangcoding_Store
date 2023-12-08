@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed:wght@400;500&family=Tilt+Neon&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&family=Roboto:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&family=Roboto:ital,wght@1,100&display=swap');
 
 * {
     margin: 0;
@@ -13,6 +14,10 @@
 
 a {
     text-decoration: none;
+}
+
+a:hover{
+    transform: scale(1.1);
 }
 
 ul {
@@ -33,15 +38,13 @@ ul {
 
 body {
     font-family: 'Poppins', sans-serif;
-    height: 20000000px;
-    background-color: #eee;
+    background: #FFF;
 }
 
 header {
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
-    height:10vh;
     z-index: 10;
     box-shadow: 0px 1.64px 8.23px 0px rgba(0, 0, 0, 0.10);
     padding: 20px 0;
@@ -64,7 +67,6 @@ header .logo a {
 }
 
 
-
 header nav ul {
     display: flex;
     gap: 16px;
@@ -75,6 +77,10 @@ header nav ul li a {
     color: #101928;
 }
 
+nav li:hover{
+    transform: scale(1.2);
+    font-weight: 800;
+}
 header .auth {
     display: flex;
     flex-wrap: wrap;
@@ -95,108 +101,730 @@ header .auth .login {
     border: 2px solid #545BEB;
 }
 
+header .login:hover{
+    color: #fff;;
+    background-color: #272DB0;
+    border:2px solid #272DB0;
+}
+
 .register {
     color: #fff;
     background-color: #545BEB;
 }
 
-Port {
-    background: #F5F5F5;
+.register:hover{
+    background-color: #272DB0;
 }
 
-Port .container {
+.Home {
     margin-top: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    background:#F5F5F5;;
+}
+
+.Home .row {
     margin: auto;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+}
+
+.Home-start,
+.Home-end {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    width: calc((100% - 30px) / 2);
+}
+
+.Home .buttons {
+    display: flex;
     align-items: center;
-    padding-top: 10px;
+    gap: 10px;
 }
 
-Port .begins {
-    margin-top: 10vh;
-    width: 600px;
+.Home .buttons a {
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    padding: 10px;
+    width: 120px;
+    margin-top: 10px;
 }
 
-Port .begins p {
+.Home .register {
+    padding: 5.354px 20.181px;
+    border-radius: 10px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.Home .buttons .Play {
+    color: #141E32;
+    width: fit-content;
+    padding: 5.354px 20.181px;
+    border-radius: 10px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    gap:7px;
+}
+.Home .Play img{
+    width: 20px;
+    height: 20px;
+}
+
+.Home p {
+    color: #545BE8;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.Home h2 {
+    color: #141E32;
+    font-family: Poppins;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.Begins {
+    font-weight: 700;
+}
+
+.course-blue {
+    color: #545BE8;
+    font-family: Poppins;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.Home .lorem {
+    color: #969696;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.Home-start {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.Home-end {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.Home-end img {
+    width: 500px;
+}
+
+
+.feed .row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 40px 0px;
+    gap: 70px;
+}
+
+.feed .feed-start {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.feed-start p:nth-child(1){
     color: #545BE8;
     font-family: Inter;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-transform: uppercase;
 }
 
-Port .begins h2 {
+.feed-start h2{
     color: #141E32;
     font-family: Poppins;
-    font-size: 70px;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.feed-start .lorem {
+    color: #969696;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.feed-cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 50px;
+}
+
+.feed-cards .card {
+    padding: 20px;
+    gap: 20px;
+    background-color: #545BE8;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: calc((100% - 100px) / 3);
+    transition: 2s;
+}
+.feed-cards .card:hover{
+    transform: scale(1.25 , 1.25);
+}
+
+.feed-cards svg:last-of-type {
+    width: 50px;
+    height: 50px;
+    background-color: #F4F4F4;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+.feed-cards .card h3 {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 12.356px;
+    /* 166.667% */
+}
+
+.feed-cards .card .lorem {
+    color: #DDD;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.feed-end{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom:80px;
+    gap: 20px;
+}
+.feed .arrows{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    padding: 0px 20px;
+    gap:15px;
+}
+.feed .arrows svg{
+    background-color: #F0C932;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 2px;
+    transition: 1s;
+}
+
+.feed .arrows svg:hover{
+    transform: scale(1.2);
+}
+
+.About {
+    background: linear-gradient(#545BE8, #272DB0);
+    display: flex;
+    flex-wrap: wrap;
+    padding:30px;
+}
+
+.About-start,
+.About-end {
+    width: calc((100%) / 2);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: flex-start;
+}
+
+.About-start {
+    justify-content: center;
+    align-items: center;
+}
+
+.About-end {
+    padding: 0px 50px;
+    gap:10px;
+}
+
+.About-end p {
+    color: #F0C932;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.About-end h2 {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 40px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
 
-Port .begins .course {
-    color: #545BE8;
+.About-end .lorem {
+    color: #DDD;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.About img {
+    width: 400px;
+}
+
+.statistics {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;   
+}
+.statistic{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    padding: 20px 0px;
+}
+.statistic h3 {
+    color: #F0C932;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.statistic span {
+    color: #DDD;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.courses {
+    padding: 40px 0;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.courses .row {
+    gap: 30px;
+    align-items: stretch;
+}
+
+.courses a:hover{
+    background-color: #272DB0;
+}
+
+.courses .course-items {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc((100% - 30px) / 2);
+    gap: 30px;
+}
+
+.course {
+    width: calc((100% - 30px) / 2);
+    position: relative;
+    box-shadow: 5px 5px 8px 4px rgba(0, 0, 0, 0.10);
+}
+
+.courses img {
+    width: 100%;
+    aspect-ratio: 135.09/99.079;
+    object-fit: cover;
+    filter: brightness(70%);
+    display: flex;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.course-card {
+    position: relative;
+}
+
+.course:hover{
+    transform: scale(1.1);
 }
 
 
-Port .begins .lorem {
+.course-info {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: small;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 20px;
+}
+
+.course-details {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+
+.course-details .row:last-of-type {
+    justify-content: flex-start;
+}
+
+.course-info span:first-of-type {
+    background-color: #545BE8;
+    align-self: flex-start;
+    padding: 10px;
+}
+
+.course-info span:last-of-type {
+    align-self: flex-end;
+    padding: 20px;
+}
+
+
+.course-details .row h2 {
+    color: #141E32;
+    font-family: Poppins;
+    font-size: large;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.course-details .row:first-of-type span {
+    color: #545BE8;
+    font-family: Poppins;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.course-details .row:last-of-type span {
     color: #969696;
+    font-family: Poppins;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.course-description {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: calc((100% - 30px) / 2);
+    padding: 10px 100px;
+    gap: 20px;
+}
+
+.course-description p:nth-child(1) {
+    color: #545BE8;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.course-description h2 {
+    color: #141E32;
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    width: 50%;
+}
+
+.course-description p {
+    color: #969696;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 70%;
+}
+
+.course-description a {
+    background-color: #545BE8;
+    color: #fff;
+    width: fit-content;
+    padding: 10px 40px;
+    border-radius: 10px;
+}
+
+.Testimonials .container {
+    padding: 40px 0px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.Testimonials h2 {
+    color: var(--Dark-color, #0D1222);
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.Testimonials span {
+    color: var(--Medium, #969696);
     font-family: Poppins;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding: 10px;
+}
+
+.Testimonials .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.Testimonial {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: calc((100% - 40px) / 2);
+    padding: 20px;
+    gap: 15px;
+    box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.10);
+    position: relative;
+}
+
+.Testimonial:after {
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-top: 50px solid #F4F4F4;
+    border-left: 50px solid transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.Testimonial:hover{
+    transform: scale(1.1);
+    background:linear-gradient(#DDD, #E0E0E0);
+}
+
+.Testimonial q {
+    color: var(--Medium-Dark, #646464);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12.356px;
+    /* 166.667% */
 }
 
 
-
-.buttons {
-    display: flex;
-    align-items: center;
+.Testimonial img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
 }
 
-.buttons a {
-    padding: 10px;
+.user-info {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-Port .begins .buttons .register {
-    width: fit-content;
-    padding: 5.354px 20.181px;
-    border-radius: 10px;
-    font-size: 14px;
+.user-data {
     display: flex;
-    align-items: center;
-    font-family: 'Inter', sans-serif;
-}
-
-Port .buttons .playvid {
-    color: #141E32;
-    width: fit-content;
-    padding: 5.354px 20.181px;
-    border-radius: 10px;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    font-family: 'Inter', sans-serif;
+    flex-direction: column;
+    gap: 2px;
+    color: #000;
+    font-family: Poppins;
+    font-style: normal;
     font-weight: 700;
+    line-height: normal;
 }
 
-Port .buttons .playvid img {
+.rating {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+.rating svg:hover{
+    transform: scale(1.5);
+}
+.rating svg path:hover{
+    fill: goldenrod;
+}
+
+
+
+footer {
+    background-color: #393E46;
+    color: #fff;
+}
+
+footer .row {
+    gap: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+footer a {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+footer img {
+    width: 30px;
+}
+
+footer .logo {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer-start,
+.footer-end {
+    width: calc((100% - 40px) / 2);
+}
+
+.footer-start {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.footer-start .loremf {
+    color: var(--light, #F4F4F4);
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    width: 80%;
+
+}
+
+footer .icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+footer .icons svg {
     width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    padding: 5px;
+    box-sizing: content-box;
 }
 
-.smile{
-    margin-top: 10vh;
+footer .icons svg:hover{
+    background-color: #272DB0;
 }
-Port .smile img {
-    width: 500px;
-    margin: auto;
-    padding-top: 20px;
+
+footer .footer-end {
+    display: flex;
+    gap: 40px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+
+.footer-item {
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-item nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    width: fit-content;
+}
+
+.footer-item h2 {
+    font-size: 20px;
+}
+
+.footer-item nav a {
+    color: var(--light, #F4F4F4);
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
